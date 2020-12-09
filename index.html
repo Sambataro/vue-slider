@@ -23,6 +23,9 @@
           </div>
           <!-- frecce slider -->
           <div class="arrows">
+            <div class="nav-image">
+              <i v-for="(image, index) in images" :class ="(index == imageIndex) ? 'circle' : ''"class="fas fa-circle" @click="imageIndex = index"></i>
+            </div>
             <div class="prev">
               <i class="fas fa-arrow-left" @click="prevImage"></i>
             </div>
