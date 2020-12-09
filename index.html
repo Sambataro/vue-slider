@@ -2,19 +2,39 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>slider Vue</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- link al css -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- vue.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <title>slider Vue</title>
   </head>
   <body>
-    <main>
+      <!-- vue.js area -->
       <div id="app">
-        <h1>{{ message }}</h1>
-        <img :src="image" alt="">
+        <div id="wrapper">
+          <div class="container">
+            <!-- slider immagini -->
+            <div class="slide">
+              <img :src="images[imageIndex]" alt="Cyberpunk lifepath">
+            </div>
+            <!-- /slider immagini -->
+          </div>
+          <!-- frecce slider -->
+          <div class="arrows">
+            <div class="prev">
+              <i class="fas fa-arrow-left" @click="prevImage"></i>
+            </div>
+            <div class="next">
+              <i class="fas fa-arrow-right" @click="nextImage"></i>
+            </div>
+
+          </div>
+          <!-- / frecce slider -->
+        </div>
       </div>
-    </main>
-    <script src="js/script.js" charset="utf-8"></script>
+      <!-- /vue.js area -->
+      <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

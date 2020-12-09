@@ -3,3 +3,68 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: black;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+#wrapper {
+  height: 600px;
+  width: 60%;
+  background-color: #F4E70D;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: calc(100% - 30px);
+}
+
+.slide {
+  width: 70%;
+  height: 100%;
+}
+
+.arrows {
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+  background-color: black;
+}
+
+.prev , .next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  height: 30px;
+  width: 30px;
+  background-color: #34D8F3;
+}
+
+.prev i , .next i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.prev:hover , .next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.slide img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+
+}
